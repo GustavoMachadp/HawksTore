@@ -1,0 +1,7 @@
+{
+  "name": "Projeto-skate",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

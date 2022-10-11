@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title> SHOWROOM </ion-title>
+    <ion-icon
+      slot="start"
+      src="../../assets/hawk.svg"
+      style="font-size: 72px"
+    ></ion-icon>
+    <ion-icon
+      slot="end"
+      style="font-size: 35px"
+      name="person-circle-outline"
+      (click)="perfil()"
+    ></ion-icon>
+    <ion-icon
+      slot="end"
+      name="close-circle-outline"
+      size="large"
+      (click)="navega()"
+    ></ion-icon>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card (click)="showPopUp(produto)" *ngFor="let produto of produtos">
+    <img src="{{skateImg[produto.$key]}}" />
+    <ion-card-header>
+      <ion-card-subtitle>{{produto.modelo}}</ion-card-subtitle>
+      <ion-card-title>{{produto.nome}}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-text
+        ><h2 style="font-size: 17px">
+          Dimensões: {{produto.tamanho}}<br />
+          Lixa: {{produto.lixa}}<br />
+          Material: {{produto.material}}<br />
+          Marca: {{produto.marca}}<br />
+          Linha: {{produto.linha}}<br />
+          Resina: {{produto.resina}}<br /></h2
+      ></ion-text>
+      <ion-text color="success"
+        ><h2 style="font-size: 19px">Valor: R${{produto.valor}}</h2></ion-text
+      >
+    </ion-card-content>
+  </ion-card>
+</ion-content>

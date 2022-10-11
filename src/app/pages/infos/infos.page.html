@@ -1,0 +1,88 @@
+<ion-content class="bg-class swiper-no-swiping">
+  <img class="ing" src="../../../assets/img/HAWKS-1-TRANS.png" alt="" />
+
+  <div class="slide-inner ion-padding">
+    <strong><span class="meio">Cadastro das demais informações</span></strong>
+
+    <ion-item class="ion-margin-top" lines="none">
+      <ion-input
+        type="text"
+        placeholder="Nome"
+        [(ngModel)]="userRegister.nome"
+      ></ion-input>
+    </ion-item>
+
+    <ion-item class="ion-margin-top" lines="none">
+      <ion-input
+        type="text"
+        placeholder="sobrenome"
+        [(ngModel)]="userRegister.sobrenome"
+      ></ion-input>
+    </ion-item>
+
+    <ion-item class="ion-margin-top" lines="none">
+      <ion-input
+        type="text"
+        placeholder="cpf"
+        [(ngModel)]="userRegister.cpf"
+      ></ion-input>
+    </ion-item>
+
+    <ion-item class="ion-margin-top" lines="none">
+      <ion-input
+        type="text"
+        placeholder="Telefone"
+        [(ngModel)]="userRegister.telefone"
+      ></ion-input>
+    </ion-item>
+
+    <ion-item class="ion-margin-top" lines="none">
+      <ion-input
+        type="text"
+        placeholder="Endereço"
+        [(ngModel)]="userRegister.endereco"
+      ></ion-input>
+    </ion-item>
+
+    <ion-item class="ion-margin-top" lines="none">
+      <ion-input
+        type="text"
+        placeholder="Cep"
+        [(ngModel)]="userRegister.cep"
+      ></ion-input>
+    </ion-item>
+
+    <ion-item class="ion-margin-top" lines="none">
+      <ion-input
+        type="text"
+        placeholder="Complemento"
+        [(ngModel)]="userRegister.complemento"
+      ></ion-input>
+    </ion-item>
+
+    <ion-item class="ion-margin-top" lines="none">
+      <ion-input
+        type="text"
+        placeholder="Estado"
+        [(ngModel)]="userRegister.estado"
+      ></ion-input>
+    </ion-item>
+
+    <ion-item class="ion-margin-top" lines="none">
+      <ion-input
+        type="text"
+        placeholder="Numero"
+        [(ngModel)]="userRegister.numero"
+      ></ion-input>
+    </ion-item>
+
+    <ion-button
+      class="ion-margin-top"
+      (click)="register()"
+      color="dark"
+      expand="block"
+    >
+      Cadastrar
+    </ion-button>
+  </div>
+</ion-content>
